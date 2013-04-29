@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Basic responsive grid, with several column widths defined */
+.grid {
+	float:left;
+	margin-bottom:2.127659574468%;
+	padding-top:0;
+}
+
+.grid-right {
+	float:right;
+	margin-bottom:2.127659574468%;
+	padding-top:0;
+}
+
+.col-60, 
+.col-140, 
+.col-220, 
+.col-300, 
+.col-380, 
+.col-460, 
+.col-540, 
+.col-620, 
+.col-700, 
+.col-780, 
+.col-860 {
+	display:inline;
+	margin-right:2.127659574468%;
+}
+
+#banner .col-460 img {
+	border: 6px solid #CCC;
+}
+
+.col-60 {
+	width:6.382978723404%;
+}
+
+.col-140 {
+	width:14.893617021277%;
+}
+
+.col-220 {
+	width:22.78%;
+}
+
+.col-240 {
+	width:24.95%;
+}
+
+.col-300 {
+	width:31.914893617021%;
+}
+
+.col-380 {
+	width:40.425531914894%;
+}
+
+.col-460 {
+	width:48.936170212766%;
+}
+
+.col-540 {
+	width:57.446808510638%;
+}
+
+.col-620 {
+	width:65.957446808511%;
+}
+
+.col-700 {
+	width:72.95%;
+}
+
+.col-780 {
+	width:82.978723404255%;
+}
+
+.col-860 {
+	width:91.489361702128%;
+}
+
+.col-940 {
+	width:100%;
+}
+
+/* .fit is the very last item in your grid 
+to keep your columns inline without float
+*/
+.fit {
+	margin-left:0!important;
+	margin-right:0!important;
+}
+
+/* Now the more specific stuff.  Media Queries to create a responsive design adjusting according to window size. */
+
+@media screen and (max-width: 980px) {
+
+      body {
+    }
+	
+    .grid, 
+	.grid-right {
+	    float:none;
+    }
+	#logo {
+	    float:none;
+	    text-align:center;
+    }
+	
+	/* Etc. etc.  This re-organizes the grid items - the change in the Float property causes them to stack in a single column.  Further entries adjust their width and margins to fit appropriately, and so on.  Additional media queries further refine this at smaller sizes, such as tablets and mobile phones, resulting in one unified design that adapts according to the size of screen it is viewed on.  */
+	
+}
